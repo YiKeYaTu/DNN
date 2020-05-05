@@ -3,7 +3,9 @@ import numpy as np
 class Neuron:
     def __init__(self, input_shape, learning_rate = 0.01):
         self.input_shape = input_shape
-        self.weights = (-1 + 2 * np.random.rand(input_shape)) / 100
+        self.weights = (-1 + 2 * np.random.rand(input_shape)) / 10
+        # self.weights = (-1 + 2 * np.random.rand(input_shape)) / 100
+        # self.weights = np.random.rand(input_shape) / 100
         self.bias = 0
         self.learning_rate = learning_rate
 

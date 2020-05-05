@@ -40,7 +40,5 @@ y_test = to_categorical(y_test, num_classes)
 model = Model()
 
 model.add(Dense(10, input_shape=784))
-model.add(Dense(10))
-model.add(Dense(10))
 model.train(x_train, y_train)
 model.predict(x_test, y_test)
